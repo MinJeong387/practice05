@@ -23,7 +23,7 @@ public class Song {
 	}
 
 	public Song(String title, String artist, String album, String composer, String year, int track) {
-		this(title, artist, album, composer, year);
+		this(title, artist, album, composer, year); // 얘가 위에있는 애를 쭉~ 읽어들이므로 Song(파라미터5개)까지 읽어들이게 됨
 		this.track = track;
 		System.out.println("Song(파라미터6개)");
 
