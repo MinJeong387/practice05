@@ -2,7 +2,7 @@ package com.javaex.ex07;
 
 import java.util.Scanner;
 
-public class FriendApp {
+public class FriendAppExplain {
 
 	public static void main(String[] args) {
 
@@ -14,6 +14,7 @@ public class FriendApp {
 		// for문 시작
 		// 친구정보 3명 입력 로직 --> 반복문 사용
 		for (int i = 0; i < friendArray.length; i++) {
+
 			System.out.print("이름: ");
 			String name = sc.next();
 
@@ -24,11 +25,10 @@ public class FriendApp {
 			String school = sc.next();
 
 			friendArray[i] = new Friend(name, hp, school);
+			System.out.println("--------------------------------------");
 		}
 
 		// for문 끝
-		
-		
 
 		// 친구정보 출력
 		for (int i = 0; i < friendArray.length; i++) {

@@ -13,14 +13,16 @@ public class Account {
 	// 필요한 메소드 작성
 
 	public void deposit(int money) {
-		this.money=money;
-	}
-	public int deposit () {
-
-		return 
+		this.balance += money;
 	}
 
-	public int withdraw () {
+	public int deposit() {
+
+		return money;
+	}
+
+	public void withdraw(int money) {
+		this.balance -= money;
 
 	}
 
